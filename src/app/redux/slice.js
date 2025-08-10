@@ -5,11 +5,11 @@ const initialState = {
 };
 
 const Slice = createSlice({
-  name: "user",
+  name: "userSlice",
   initialState,
   reducers: {
     addUser: (state, action) => {
-      console.log(action)
+      // console.log(action)
       const data = {
         id: nanoid(),
         name: action.payload,
